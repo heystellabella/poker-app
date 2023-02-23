@@ -9,7 +9,7 @@ const pokerDictionary = {
     "big blind": "a forced bet"
 }
 
-export default function TestYourSkills() {
+function TestYourSkills() {
     return (
         <div>
             THIS IS THE TEST YOUR SKILLS PAGE
@@ -17,4 +17,4 @@ export default function TestYourSkills() {
     )
 }
 
-// export default TestYourSkills
+export default TestYourSkills

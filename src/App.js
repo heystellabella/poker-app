@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="App">
       <h1>Stella's Poker Academy</h1>
-      <h3>Where professional poker players are made.</h3>
+      <h3 id="tagline">Where professional poker players are made.</h3>
       <nav>
-        <p><Link to="/" >Home</Link></p>
-        <p><Link to="/how-to-play">How to Play</Link></p>
-        <p><Link to="/hand-rankings">Hand Rankings</Link></p>
-        <p><Link to="/poker-dictionary">Poker Dictionary</Link></p>
-        <p><Link to="test-your-skills">Test Your Skills</Link></p>
+        <p class="navLink"><Link to="/" >Home</Link></p>
+        <p class="navLink"><Link to="/how-to-play">How to Play</Link></p>
+        <p class="navLink"><Link to="/hand-rankings">Hand Rankings</Link></p>
+        <p class="navLink"><Link to="/poker-dictionary">Poker Dictionary</Link></p>
+        <p class="navLink"><Link to="test-your-skills">Test Your Skills</Link></p>
       </nav>
       <Routes>
         <Route path="/" element={<Home></Home>}/>
