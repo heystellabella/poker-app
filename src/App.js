@@ -1,15 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import Tabs from './Tabs';
+
+import {Route, Routes, Link} from "react-router-dom"
+import Home from "./pages/Home.js"
+import HowToPlay from "./pages/HowToPlay.js"
+import TestYourSkills from "./pages/TestYourSkills.js"
+
 
 function App() {
   return (
     <div className="App">
-        <h1>Poker Academy</h1>
-        <h3 className="tagline">Where professional poker players are made.</h3>
-        <div>
-            <Tabs></Tabs>
-        </div>
+      <h1>Stella's Poker Academy</h1>
+      <h3>Where professional poker players are made.</h3>
+      <nav>
+        <p><Link to="/" >Home</Link></p>
+        <p><Link to="/how-to-play">How to Play</Link></p>
+        <p><Link to="test-your-skills">Test Your Skills</Link></p>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home></Home>}/>
+        <Route path="/how-to-play" element={<HowToPlay></HowToPlay>}/>
+        <Route path="/test-your-skills" element={<TestYourSkills></TestYourSkills>}/>
+      </Routes>
     </div>
   );
 }
