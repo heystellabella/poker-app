@@ -9,12 +9,24 @@ const pokerDictionary = {
     "big blind": "a forced bet"
 }
 
-export default function TestYourSkills() {
+function pokerDefinition(pokerDictionary) {
+    for (const term in pokerDictionary) {
+        
+    }
+}
+
+function PokerLingo() {
+
     return (
         <div>
-            THIS IS THE TEST YOUR SKILLS PAGE
+            <h2>Poker Dictionary</h2>
+            <p>Now you know the rules of how to play poker, the next step is to learn how to talk like a poker pro. Here are the words that every poker player MUST know.</p>
+            <div id="pokerVocab">
+            
+
+            </div>
         </div>
     )
 }
 
-// export default TestYourSkills
+export default PokerLingo
