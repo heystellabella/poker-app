@@ -4,16 +4,17 @@ import './PokerHandRankingGame.css'
 function PokerHandRankingGame() {
     const [widgets, setWidgets] = useState([]);
 
-    function handleOnDrag(e: React.DragEvent, widgetType: string) {
+    function handleOnDrag(e, widgetType) {
         e.dataTransfer.setData("widgetType", widgetType)
     }
 
-    function handleOnDrop(e: React.DragEvent, widgetType: string) {
-        e.dataTransfer.setData("widgetType", widgetType)
+    function handleOnDrop(e) {
+        const widgetType = e.dataTransfer.getData("widgetType")
+        console.log(widgetType)
         setWidgets([...widgets, widgetType])
     }
 
-    function handleDragOver(e: React.DragEvent) {
+    function handleDragOver(e) {
         e.preventDefault();
     }
     return (
@@ -81,6 +82,7 @@ function PokerHandRankingGame() {
 
                 <div className="dropArea" onDrop={handleOnDrop} onDragOver={handleDragOver}>
                     Drop your answer here.
+                    {widgets.map((widget) => <div className="widget">{widget} </div>)}
                 </div>
 
             </div>

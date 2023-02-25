@@ -31,8 +31,8 @@ function TestYourSkills() {
     return (
         <div>
             <h2>Test Your Skills</h2>
-            Test what you've learn with our fun, educational games!<br /><br />
-            
+            Test what you've learnt with our fun, educational games!<br /><br />
+
             Click one of the links below to get started.<br />
             <div className="subNavBar">
                 <nav>
