@@ -18,7 +18,7 @@ function HowToPlay() {
                 <p>Poker games typically feature a forced bet called the Big Blind and Small Blind. These forced bets comprise the starting pot in any given hand of poker, which is the first incentive players have to win the hand. Action arising from the subsequent rounds of betting further increases the size of the pot.</p>
 
                 <h4>Dealing Cards and Placing Bets</h4>
-                <p>
+                <div>
                     After any initial cards are dealt, players are usually called upon to act in turn, moving clockwise around the table.<br/><br/>
 
                     Each player can usually take one of the following actions when it is their turn to act:<br/><br/>
@@ -43,7 +43,7 @@ function HowToPlay() {
                     The pre-flop betting round begins as soon as all players have received their hole cards, before any community cards have been dealt; betting on the flop occurs after the first three community cards are dealt; on the turn after the fourth community card; and on the river after the fifth and final community card.<br/><br/>
 
                     On each betting round, betting continues until every player has either matched the bets made or folded (if no bets are made, the round is complete when every player has checked). When the betting round is completed, the next dealing/betting round begins, or the hand is complete.
-                </p>
+                </div>
             </div>
         </div>
     )

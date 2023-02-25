@@ -1,3 +1,7 @@
+import { Route, Routes, Link} from "react-router-dom"
+import PokerDictionaryGame from "./subpages/PokerDictionaryGame"
+import PokerHandRankingGame from "./subpages/PokerHandRankingGame"
+
 const pokerDictionary = {
     "check": "to decline to bet",
     "bet": "to put chips in the pot",
@@ -9,10 +13,36 @@ const pokerDictionary = {
     "big blind": "a forced bet"
 }
 
+const handRankings = {
+    1: "Royal Flush",
+    2: "Straight Flush",
+    3: "Four of a Kind",
+    4: "Full House",
+    5: "Flush",
+    6: "Straight",
+    7: "Three of a Kind",
+    8: "Two Pair",
+    8: "One Pair",
+    8: "High Card",
+}
+
 function TestYourSkills() {
+    // let { path, url } = useRouteMatch()
     return (
         <div>
-            THIS IS THE TEST YOUR SKILLS PAGE
+            <h2>Test Your Skills</h2>
+            Test what you've learn with our fun, educational games!<br/><br/>
+            
+            Click one of the links below to get started.
+            <nav>
+                <p className="game"><Link to="poker-dictionary-game">Poker Dictionary Game</Link></p>
+                <p className="game"><Link to="poker-hand-ranking-game">Poker Hand Ranking Game</Link></p>
+            </nav>
+          
+            <Routes>
+                <Route path="poker-dictionary-game" element={<PokerDictionaryGame></PokerDictionaryGame>}/>
+                <Route path="poker-hand-ranking-game" element={<PokerHandRankingGame></PokerHandRankingGame>}/>
+            </Routes>
         </div>
     )
 }
