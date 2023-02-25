@@ -1,4 +1,4 @@
-import { Route, Routes, Link} from "react-router-dom"
+import { Route, Routes, Link } from "react-router-dom"
 import PokerDictionaryGame from "./subpages/PokerDictionaryGame"
 import PokerHandRankingGame from "./subpages/PokerHandRankingGame"
 
@@ -31,17 +31,19 @@ function TestYourSkills() {
     return (
         <div>
             <h2>Test Your Skills</h2>
-            Test what you've learn with our fun, educational games!<br/><br/>
+            Test what you've learn with our fun, educational games!<br /><br />
             
-            Click one of the links below to get started.
-            <nav>
-                <p className="game"><Link to="poker-dictionary-game">Poker Dictionary Game</Link></p>
-                <p className="game"><Link to="poker-hand-ranking-game">Poker Hand Ranking Game</Link></p>
-            </nav>
-          
+            Click one of the links below to get started.<br />
+            <div className="subNavBar">
+                <nav>
+                    <p className="navLink"><Link to="poker-dictionary-game">Poker Dictionary Game</Link></p>
+                    <p className="navLink"><Link to="poker-hand-ranking-game">Poker Hand Ranking Game</Link></p>
+                </nav>
+            </div>
+
             <Routes>
-                <Route path="poker-dictionary-game" element={<PokerDictionaryGame></PokerDictionaryGame>}/>
-                <Route path="poker-hand-ranking-game" element={<PokerHandRankingGame></PokerHandRankingGame>}/>
+                <Route path="poker-dictionary-game" element={<PokerDictionaryGame></PokerDictionaryGame>} />
+                <Route path="poker-hand-ranking-game" element={<PokerHandRankingGame></PokerHandRankingGame>} />
             </Routes>
         </div>
     )

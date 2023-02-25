@@ -22,10 +22,13 @@ h1, h2 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.banner > nav {
+.subNavBar {
+  text-align: center;
+}
+
+nav {
   display: inline-flex;
   margin: 10px;
-  align-items: center;
 }
 
 nav > .navLink {

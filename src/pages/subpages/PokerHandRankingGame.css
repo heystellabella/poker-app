@@ -1,0 +1,11 @@
+.gameArea {
+    display: flex;
+    justify-content: space-evenly;
+}
+.dropArea {
+    background-color: rgb(129, 187, 245);
+    width: 250px;
+    text-align: center;
+    border: rgb(60, 60, 60) solid 3px;
+    border-radius: 15px;
+}
