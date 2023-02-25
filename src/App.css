@@ -5,6 +5,8 @@ body {
 .banner {
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
 }
 
 .banner > h1 {
@@ -12,7 +14,8 @@ body {
 }
 
 h1, h2 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .banner > #tagline {
