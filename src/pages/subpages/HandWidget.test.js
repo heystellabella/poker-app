@@ -28,7 +28,7 @@ test("onDrag function is called when the component is dragged", () => {
         id: 10
     }
 
-    // create moch function
+    // create mock function
     const mockDrag = jest.fn()
 
     render (
@@ -36,5 +36,6 @@ test("onDrag function is called when the component is dragged", () => {
     )
     
     fireEvent.drag(screen.getByTestId("drag-test"))
+    
     expect(mockDrag).toHaveBeenCalled
 })

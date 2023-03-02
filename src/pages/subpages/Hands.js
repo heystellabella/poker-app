@@ -7,7 +7,7 @@ function Hands() {
     const [selectedHands, setSelectedHands] = useState([])
     const [currentDragged, setCurrentDragged] = useState(null)
 
-    function handleOnDropSelected(e) {
+    function handleOnDropSelected() {
         // Stops user from draggin into the same area
         if(selectedHands.includes(currentDragged)) {
             return
@@ -25,7 +25,7 @@ function Hands() {
         setUnselectedHands(newUnselected)
     }
 
-    function handleOnDropUnselected(e) {
+    function handleOnDropUnselected() {
         // Stops user from dragging into the same area
         if(unselectedHands.includes(currentDragged)) {
             return
@@ -63,7 +63,7 @@ function Hands() {
             </div>
 
             <div id="selectedSection" onDrop={handleOnDropSelected} onDragOver={handleDragOver} style={{ border: "1px red solid", height: "300px" }}>
-                <HandWidgets key={hands} hands={selectedHands}></HandWidgets>
+                <HandWidgets key={hands} hands={selectedHands} onDrag={onDrag}></HandWidgets>
             </div>
 
         </div>

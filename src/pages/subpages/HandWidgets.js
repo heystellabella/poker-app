@@ -8,11 +8,11 @@ function HandWidgets({hands, onDrag}) {
     return (
         <>
 
-        {hands.map((hand) => {
+        {hands.map((hand, index) => {
             // takes each object element as props
             // console.log(hand);
             return(
-                <HandWidget key={hand.id} handCombo={hand} onDrag={onDrag}></HandWidget>
+                <HandWidget key={index} index={index} handCombo={hand} onDrag={onDrag}></HandWidget>
             ) 
         })}
         </>
