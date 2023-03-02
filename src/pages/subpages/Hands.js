@@ -8,20 +8,39 @@ function Hands() {
     const [currentDragged, setCurrentDragged] = useState(null)
 
     function handleOnDropSelected(e) {
-        setSelectedHands([...selectedHands, currentDragged])
+        // Stops user from draggin into the same area
+        if(selectedHands.includes(currentDragged)) {
+            return
+        } else {
+            setSelectedHands([...selectedHands, currentDragged])
+        }
+        
 
         let newUnselected = []
         for (let i = 0; i < unselectedHands.length; i++) {
             if (unselectedHands[i] !== currentDragged) {
                 newUnselected.push(unselectedHands[i])
             }
-
         }
         setUnselectedHands(newUnselected)
     }
 
     function handleOnDropUnselected(e) {
+        // Stops user from dragging into the same area
+        if(unselectedHands.includes(currentDragged)) {
+            return
+        } else {
+            setUnselectedHands([...unselectedHands, currentDragged])
+        }
 
+        let newSelected = []
+        for (let i = 0; i < selectedHands.length; i++) {
+            if (selectedHands[i] !== currentDragged) {
+                newSelected.push(selectedHands[i])
+            }
+
+        }
+        setSelectedHands(newSelected)
     }
 
     function handleDragOver(e) {
@@ -36,16 +55,18 @@ function Hands() {
     // console.log(selectedHands)
     // console.log("current dragged is:", currentDragged)
 
-    return (<>
-        <div onDrop={handleOnDropUnselected} onDragOver={handleDragOver}>
-            <HandWidgets hands={unselectedHands} onDrag={onDrag}></HandWidgets>
-        </div>
+    return (
+        <div>
 
-        <div onDrop={handleOnDropSelected} onDragOver={handleDragOver} style={{ border: "1px red solid", height: "300px" }}>
-            <HandWidgets hands={selectedHands}></HandWidgets>
-        </div>
+            <div id="unselectedSection" onDrop={handleOnDropUnselected} onDragOver={handleDragOver}>
+                <HandWidgets key={hands} hands={unselectedHands} onDrag={onDrag}></HandWidgets>
+            </div>
 
-    </>
+            <div id="selectedSection" onDrop={handleOnDropSelected} onDragOver={handleDragOver} style={{ border: "1px red solid", height: "300px" }}>
+                <HandWidgets key={hands} hands={selectedHands}></HandWidgets>
+            </div>
+
+        </div>
     )
 }
 

@@ -4,14 +4,14 @@ function HandWidget({handCombo, onDrag}) {
 
     // console.log(handCombo)
 
-    function handleOnDrag(e, handCombo) {
+    function handleOnDrag(handCombo) {
         // e.dataTransfer.setData("text", handCombo.name)
         onDrag(handCombo)
     }
     
     return (
         <div className="widget" draggable onDragStart={(e) => {
-            handleOnDrag(e, handCombo)
+            handleOnDrag(handCombo)
         }}>
             {handCombo.name}
         </div>
