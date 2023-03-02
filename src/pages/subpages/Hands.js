@@ -71,14 +71,22 @@ function Hands() {
     // console.log("current dragged is:", currentDragged)
 
     return (
-        <div>
+        <div className="gameArea">
 
-            <div id="unselectedSection" onDrop={handleOnDropUnselected} onDragOver={handleDragOver}>
-                <HandWidgets key={hands} hands={unselectedHands} onDrag={onDrag}></HandWidgets>
+            <div className="unselectedSection" onDrop={handleOnDropUnselected} onDragOver={handleDragOver}>
+                <h3>Move these:</h3>
+                <div className="widgets">
+                    <HandWidgets key={hands} hands={unselectedHands} onDrag={onDrag}></HandWidgets>
+                </div>
+
             </div>
 
-            <div id="selectedSection" onDrop={handleOnDropSelected} onDragOver={handleDragOver} style={{ border: "1px red solid", height: "300px" }}>
-                <HandWidgets key={hands} hands={selectedHands} onDrag={onDrag}></HandWidgets>
+            <div className="selectedSection" onDrop={handleOnDropSelected} onDragOver={handleDragOver}>
+                <h3>To here:</h3>
+                <div className="widgets">
+                    <HandWidgets key={hands} hands={selectedHands} onDrag={onDrag}></HandWidgets>
+                </div>
+
             </div>
 
         </div>

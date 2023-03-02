@@ -26,9 +26,9 @@ function PokerHandRankingGame() {
         <div className="gamePage">
             <div className="instructions">
                 <strong>Instructions: </strong><br/><br/>
-                Drag the names of the hand combinations to the drop area in order of strongest to weakest
+                Drag the names of the hand combinations to the drop area in order of strongest to weakest. Strongest at the top, weakest at the bottom.
             </div>
-            <div className="gameArea">
+            <div>
                 <Hands></Hands>
             </div>
 
