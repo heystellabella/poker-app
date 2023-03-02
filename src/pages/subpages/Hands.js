@@ -68,6 +68,19 @@ function Hands() {
 
     function handleSubmit() {
         console.log("button works")
+        if (selectedHands.length !== 10) {
+            console.log("You're missing a few hand combos")
+        } else {
+            let rankCounter = 10
+            for (let i=0; i<selectedHands.length; i++) {
+                if(selectedHands[i].id === rankCounter) {
+                    rankCounter = rankCounter - 1
+                } else {
+                    console.log("bad luck")
+                }
+            }
+            console.log("You won! Pokerstar!")
+        }
     }
 
     // console.log(unselectedHands)
