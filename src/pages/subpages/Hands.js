@@ -83,6 +83,10 @@ function Hands() {
         }
     }
 
+    function handleReset() {
+        setUnselectedHands(randomise(hands))
+        setSelectedHands([])
+    }
     // console.log(unselectedHands)
     // console.log(selectedHands)
     // console.log("current dragged is:", currentDragged)
@@ -110,6 +114,7 @@ function Hands() {
             </div>
             <div className="submitSection">
                 <input className="submitButton" type="submit" onClick={handleSubmit}></input>
+                <button className="resetButton" onClick={handleReset}>Reset</button>
             </div>
             
         </div>
