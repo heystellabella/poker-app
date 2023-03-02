@@ -1,8 +1,13 @@
 import { useState } from "react";
 import './PokerHandRankingGame.css'
+import HandWidgets from "./HandWidgets"
+import hands from "./HandData"
+import Hands from "./Hands"
 
 function PokerHandRankingGame() {
     const [widgets, setWidgets] = useState([]);
+
+    // console.log(hands)
 
     function handleOnDrag(e, widgetType) {
         e.dataTransfer.setData("widgetType", widgetType)
@@ -24,7 +29,7 @@ function PokerHandRankingGame() {
                 Drag the names of the hand combinations to the drop area in order of strongest to weakest
             </div>
 
-            <div className="gameArea">
+            {/* <div className="gameArea">
 
 
                 <div className="widgets">
@@ -80,12 +85,18 @@ function PokerHandRankingGame() {
                     </div>
                 </div>
 
+                <div>
+                    Testing area
+                    <HandWidgets key={hands.id} hands={hands}></HandWidgets>
+                </div>
                 <div className="dropArea" onDrop={handleOnDrop} onDragOver={handleDragOver}>
                     Drop your answer here.
-                    {widgets.map((widget) => <div className="widget">{widget} </div>)}
+                    {widgets.map((widget, index) => <div className="widget">{widget} </div>)}
                 </div>
 
-            </div>
+            </div> */}
+            <Hands></Hands>
+
         </div>
     )
 }
