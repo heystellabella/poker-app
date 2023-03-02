@@ -3,7 +3,22 @@ import hands from "./HandData"
 import HandWidgets from "./HandWidgets"
 
 function Hands() {
-    const [unselectedHands, setUnselectedHands] = useState(hands)
+
+    // randmise hands
+    function randomise(arr) {
+        let currentIndex = arr.length,  randomIndex;
+
+        while (currentIndex !== 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex)
+            currentIndex --;
+
+            [arr[currentIndex], arr[randomIndex]] = [arr[randomIndex], arr[currentIndex]];
+        }
+        return arr;
+    }
+
+    const randomHands = randomise(hands)
+    const [unselectedHands, setUnselectedHands] = useState(randomHands)
     const [selectedHands, setSelectedHands] = useState([])
     const [currentDragged, setCurrentDragged] = useState(null)
 
