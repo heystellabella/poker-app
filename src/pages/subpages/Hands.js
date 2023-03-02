@@ -79,14 +79,17 @@ function Hands() {
         } else {
             let rankCounter = 10
             for (let i=0; i<selectedHands.length; i++) {
-                if(selectedHands[i].id === rankCounter) {
+                if(selectedHands[i].ranking === rankCounter) {
                     rankCounter = rankCounter - 1
+                    console.log(rankCounter)
                 } else {
                     console.log("bad luck")
                     setModalContent("bad luck")
                     toggleModal()
+                    return
                 }
             }
+            console.log(rankCounter)
             console.log("You won! Pokerstar!")
             setModalContent("You won! Pokerstar!")
             toggleModal()
@@ -96,6 +99,8 @@ function Hands() {
     function handleReset() {
         setUnselectedHands(randomise(hands))
         setSelectedHands([])
+        setModal(false)
+        setModalContent(null)
     }
     // console.log(unselectedHands)
     // console.log(selectedHands)
@@ -131,7 +136,7 @@ function Hands() {
                 (<div className="modal">
                 <div className="overlay" onClick={toggleModal}>
                     <div className="modalContent">
-                        <h2>hello</h2>
+                        <h2>Result</h2>
                         <div className="modalContent">
                             {modalContent}
                         </div>
