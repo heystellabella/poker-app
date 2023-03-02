@@ -66,12 +66,17 @@ function Hands() {
         setCurrentDragged(hand)
     }
 
+    function handleSubmit() {
+        console.log("button works")
+    }
+
     // console.log(unselectedHands)
     // console.log(selectedHands)
     // console.log("current dragged is:", currentDragged)
 
     return (
-        <div className="gameArea">
+        <div>
+            <div className="gameArea">
 
             <div className="unselectedSection" onDrop={handleOnDropUnselected} onDragOver={handleDragOver}>
                 <h3>Move these:</h3>
@@ -89,7 +94,13 @@ function Hands() {
 
             </div>
 
+            </div>
+            <div className="submitSection">
+                <input className="submitButton" type="submit" onClick={handleSubmit}></input>
+            </div>
+            
         </div>
+
     )
 }
 
