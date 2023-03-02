@@ -4,7 +4,7 @@ import HandWidgets from "./HandWidgets"
 
 function Hands() {
 
-    // randmise hands
+    // randomise hands
     function randomise(arr) {
         let currentIndex = arr.length,  randomIndex;
 
@@ -17,10 +17,15 @@ function Hands() {
         return arr;
     }
 
-    const randomHands = randomise(hands)
-    const [unselectedHands, setUnselectedHands] = useState(randomHands)
+    const [unselectedHands, setUnselectedHands] = useState(randomise(hands))
     const [selectedHands, setSelectedHands] = useState([])
     const [currentDragged, setCurrentDragged] = useState(null)
+    const [modal, setModal] = useState(false)
+    const [modalContent, setModalContent] = useState(null)
+    
+    function toggleModal() {
+        setModal(!modal)
+    }
 
     function handleOnDropSelected() {
         // Stops user from draggin into the same area
@@ -29,7 +34,6 @@ function Hands() {
         } else {
             setSelectedHands([...selectedHands, currentDragged])
         }
-        
 
         let newUnselected = []
         for (let i = 0; i < unselectedHands.length; i++) {
@@ -67,9 +71,11 @@ function Hands() {
     }
 
     function handleSubmit() {
-        console.log("button works")
+
         if (selectedHands.length !== 10) {
             console.log("You're missing a few hand combos")
+            setModalContent("You're missing a few hand combos")
+            toggleModal()
         } else {
             let rankCounter = 10
             for (let i=0; i<selectedHands.length; i++) {
@@ -77,9 +83,13 @@ function Hands() {
                     rankCounter = rankCounter - 1
                 } else {
                     console.log("bad luck")
+                    setModalContent("bad luck")
+                    toggleModal()
                 }
             }
             console.log("You won! Pokerstar!")
+            setModalContent("You won! Pokerstar!")
+            toggleModal()
         }
     }
 
@@ -116,7 +126,22 @@ function Hands() {
                 <input className="submitButton" type="submit" onClick={handleSubmit}></input>
                 <button className="resetButton" onClick={handleReset}>Reset</button>
             </div>
-            
+
+            { modal &&
+                (<div className="modal">
+                <div className="overlay" onClick={toggleModal}>
+                    <div className="modalContent">
+                        <h2>hello</h2>
+                        <div className="modalContent">
+                            {modalContent}
+                        </div>
+                        <button className="closeButton" onClick={toggleModal}>CLOSE</button>
+                    </div>
+                </div>
+                </div>)
+            }
+
+
         </div>
 
     )

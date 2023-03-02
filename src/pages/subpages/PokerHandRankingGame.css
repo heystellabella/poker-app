@@ -34,7 +34,7 @@ h3 {
 
 }
 
-.submitButton {
+.submitButton, .resetButton {
     background-color: rgb(185, 203, 163);
     padding: 5px;
     width: 200px;
@@ -46,5 +46,20 @@ h3 {
 
 .submitSection {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background-color: rgb(151, 151, 151);
 }
