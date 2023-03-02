@@ -10,7 +10,7 @@ function HandWidget({handCombo, onDrag}) {
     }
     
     return (
-        <div className="widget" draggable onDragStart={(e) => {
+        <div className="widget" draggable data-testid="drag-test" onDragStart={(e) => {
             handleOnDrag(handCombo)
         }}>
             {handCombo.name}
