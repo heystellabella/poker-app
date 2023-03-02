@@ -73,25 +73,20 @@ function Hands() {
     function handleSubmit() {
 
         if (selectedHands.length !== 10) {
-            console.log("You're missing a few hand combos")
-            setModalContent("You're missing a few hand combos")
+            setModalContent("You're missing a few hand combos! Close this box and keep going!")
             toggleModal()
         } else {
             let rankCounter = 10
             for (let i=0; i<selectedHands.length; i++) {
                 if(selectedHands[i].ranking === rankCounter) {
                     rankCounter = rankCounter - 1
-                    console.log(rankCounter)
                 } else {
-                    console.log("bad luck")
-                    setModalContent("bad luck")
+                    setModalContent("Incorrect, bad luck! Close this box and try again!")
                     toggleModal()
                     return
                 }
             }
-            console.log(rankCounter)
-            console.log("You won! Pokerstar!")
-            setModalContent("You won! Pokerstar!")
+            setModalContent("Thats right! Congratulations, you're a pokerstar!")
             toggleModal()
         }
     }
@@ -137,9 +132,9 @@ function Hands() {
                 <div className="overlay" onClick={toggleModal}>
                     <div className="modalContent">
                         <h2>Result</h2>
-                        <div className="modalContent">
+                        
                             {modalContent}
-                        </div>
+                        
                         <button className="closeButton" onClick={toggleModal}>CLOSE</button>
                     </div>
                 </div>
