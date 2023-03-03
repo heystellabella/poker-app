@@ -1,3 +1,27 @@
+# Technologies Used
+1. React JS
+2. React Router
+3. Material UI
+
+# Approach taken
+High Level Scope:
+1. React JS App was created
+2. Components within the app to render pages and subpages of the website were created
+3. Using react router, the components were linked together
+
+Hand Ranking Game:
+1. Data file for hand combinations created. This was an array of objects representing poker hands. Each hand had a name, id, and ranking value assigned to it.
+2. Created a component to render the widget for one hand.
+3. Created a component to map all the hands using the component in (2.) and the data file. This component renders all the hand widgets.
+4.
+
+# Installation instructions
+
+# Unsolved Problems
+1. The hand ranking game currently does not allow the user to reshuffle the widgets once selected in the drop area, they must drag it back to the initial list section and redrag in the desired order.
+2. Once the modal is open, you can still scroll on the screen that it is overlaying.
+____________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +92,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

@@ -4,14 +4,26 @@ function HandRankings() {
             <h2>Hand Rankings</h2>
             <p>Not sure if you've got a good hand or not? Fear not, you can find all the information you need below. All hands are ranked from strongest to weakest.</p>
             <div className="handCombination">
-                <h4 className="handCombinationTitle">Straight Flush</h4>
+                <h4 className="handCombinationTitle">Royal Flush</h4>
+                The best possible straight flush is known as a royal flush, which consists of the ace, king, queen, jack and ten of a suit. A royal flush is an unbeatable hand. 
                 Five cards in numerical order, all of identical suits.<br /><br />
 
-                [PICTURE]<br /><br />
+                <img src="https://cms.rationalcdn.com/v3/assets/blteecf9626d9a38b03/blt35765780bf3ff238/6144fb195c4bfe2d90de0817/royal-flush.png"></img><br /><br />
 
                 In the event of a tie: Highest rank at the top of the sequence wins.<br /><br />
 
-                The best possible straight flush is known as a royal flush, which consists of the ace, king, queen, jack and ten of a suit. A royal flush is an unbeatable hand.<br />
+               <br />
+            </div>
+            
+            <div className="handCombination">
+                <h4 className="handCombinationTitle">Straight Flush</h4>
+                Five cards in numerical order, all of identical suits.<br /><br />
+
+                <img src="https://cms.rationalcdn.com/v3/assets/blteecf9626d9a38b03/blt35d114a96b67f841/614502ef16efb2260172e779/straight-flush.png"></img><br /><br />
+
+                In the event of a tie: Highest rank at the top of the sequence wins.<br /><br />
+
+                The best possible straight flush is a royal flush.<br />
             </div>
 
             <div className="handCombination">
