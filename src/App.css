@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(229, 244, 249);
+  background-color: rgb(226, 234, 248);
 }
 
 .banner {
@@ -28,12 +28,13 @@ h1, h2 {
 
 nav {
   display: inline-flex;
-  margin: 10px;
 }
 
 nav > .navLink {
   padding: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 div {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

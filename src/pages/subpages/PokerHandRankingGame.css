@@ -46,8 +46,9 @@ h3 {
 
 .submitSection {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    /* flex-direction: column; */
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
 .modal, .overlay {

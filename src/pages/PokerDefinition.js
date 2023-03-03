@@ -1,3 +1,5 @@
+import Divider from '@mui/material/Divider'
+
 function PokerDefinition({pokerWord}) {
 
     return (
@@ -6,6 +8,7 @@ function PokerDefinition({pokerWord}) {
             <p>
                 {pokerWord.definition}
             </p>
+            <Divider variant="middle" />
         </div>
     )
 }

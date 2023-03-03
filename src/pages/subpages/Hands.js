@@ -120,8 +120,8 @@ function Hands() {
 
             </div>
             <div className="submitSection">
-                <input className="submitButton" type="submit" onClick={handleSubmit}></input>
                 <button className="resetButton" onClick={handleReset}>Reset</button>
+                <input className="submitButton" type="submit" onClick={handleSubmit}></input>
             </div>
 
             { modal &&
