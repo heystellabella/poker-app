@@ -12,8 +12,8 @@ function TestYourSkills() {
             Click one of the links below to get started.<br />
             <div className="subNavBar">
                 <nav>
-                    <p className="navLink"><Link to="poker-dictionary-game">Poker Dictionary Game</Link></p>
                     <p className="navLink"><Link to="poker-hand-ranking-game">Poker Hand Ranking Game</Link></p>
+                    <p className="navLink"><Link to="poker-dictionary-game">Poker Dictionary Game</Link></p>
                 </nav>
             </div>
 

@@ -24,21 +24,22 @@ function HowToPlay() {
                     Each player can usually take one of the following actions when it is their turn to act:<br/><br/>
                     <ul>
                         <li>
-                            Check – To check is to decline the opportunity to open the betting. Players can only check when there is no bet during the current round, and the act of checking passes the action clockwise to the next person in the hand. If all active players check, those players remain in the hand and the round is considered complete.</li>
-                        <li>
+                            Check – To check is to decline the opportunity to open the betting. Players can only check when there is no bet during the current round, and the act of checking passes the action clockwise to the next person in the hand. If all active players check, those players remain in the hand and the round is considered complete.
+                        </li><br/>
+                        <li> 
                             Bet – Players may bet if no other players have bet during the current round. Once a bet has been made, other players must ‘call’ by matching the amount bet, in order to remain in the hand.
-                        </li>
+                        </li><br/>
                         <li>
                             Fold – Players who fold forfeit their cards and cannot win or act again during the current hand.
-                        </li>
+                        </li><br/>
                         <li>
                             Call – Players can call if other players have bet during the current round; this requires the calling player to match the highest bet made.
-                        </li>
+                        </li><br/>
                         <li>
                             Raise – Players may raise if other players have bet during the current round; this requires the raising player to match the highest bet made, and then make a greater one. All subsequent players are required to call the raise or raise again (‘re-raise’) to stay in the hand.
                         </li>
                     </ul>
-                    Different variants of poker have different betting rounds. Texas Hold’em and Omaha are the two most popular poker games in the world and have identical betting structures, with four rounds of betting known as pre-flop, the flop, the turn and the river.<br/><br/>
+                    There are four rounds of betting known as pre-flop, the flop, the turn and the river.<br/><br/>
 
                     The pre-flop betting round begins as soon as all players have received their hole cards, before any community cards have been dealt; betting on the flop occurs after the first three community cards are dealt; on the turn after the fourth community card; and on the river after the fifth and final community card.<br/><br/>
 
