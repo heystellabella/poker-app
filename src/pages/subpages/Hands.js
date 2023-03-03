@@ -97,9 +97,6 @@ function Hands() {
         setModal(false)
         setModalContent(null)
     }
-    // console.log(unselectedHands)
-    // console.log(selectedHands)
-    // console.log("current dragged is:", currentDragged)
 
     return (
         <div>
