@@ -3,7 +3,7 @@ import { Route, Routes, Link } from "react-router-dom"
 import Home from "./pages/Home.js"
 import HowToPlay from "./pages/HowToPlay.js"
 import HandRankings from "./pages/HandRankings.js"
-import PokerLingo from "./pages/PokerLingo.js"
+import PokerDictionary from "./pages/PokerDictionary.js"
 import TestYourSkills from "./pages/TestYourSkills.js"
 import './App.css'
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/how-to-play" element={<HowToPlay></HowToPlay>} />
         <Route path="/hand-rankings" element={<HandRankings></HandRankings>} />
-        <Route path="/poker-dictionary" element={<PokerLingo></PokerLingo>} />
+        <Route path="/poker-dictionary" element={<PokerDictionary></PokerDictionary>} />
         <Route path="/test-your-skills/*" element={<TestYourSkills></TestYourSkills>} />
       </Routes>
     </div>
