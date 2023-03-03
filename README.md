@@ -1,3 +1,51 @@
+# Technologies Used
+1. React JS
+2. React Router
+3. Material UI
+
+# Approach taken
+High Level Scope Approach:
+1. React JS App was created
+2. Components within the app to render pages and subpages of the website were created
+3. Using react router, the components were linked together
+
+Hand Ranking Game:
+1. Data file for hand combinations created. This was an array of objects representing poker hands. Each hand had a name, id, and ranking value assigned to it.
+2. Created a component to render the widget for one hand (HandWidget.js)
+3. Created a component to map all the hands using the component in (2.) and the data file. This component renders all the hand widgets. (HandWidgets.js)
+4. Created another component that uses the above two components (2, 3) to creat the game. (Hands.js)
+
+Hand Ranking Game Logic:
+1. Two "lists" are created, one to represent the user's starting list of all hands, one to represent the list that the user arranges the hands into. I used useState from react to create this.
+2. Wrote functions to handle when the widget is being dragged, to keep track of the current hand.
+3. Wrote 2 separate functions to handle when the dragged (current/selected) widget has been dropped - will add to the receiving list and simultaneously remove it from the outgoing list.
+4. Wrote a function to handle when the user submits an answer. This hands the three cases:
+    - Correct answer
+    - Incorrect answer
+    - Incomplete answer
+5. Wrote function to reset the game. Sets all the states back to initial.
+
+# Installation instructions
+1. Install the React Router Library
+    - For yarn: yarn add react-router-dom
+    - For npm: npm install react-router-dom
+    - Referece: https://v5.reactrouter.com/core/guides/quick-start/installation
+
+2. Install Jest for testing
+    - For yarn: yarn add --dev jest
+    - For npm: npm install --save-dev
+    - Referece: https://jestjs.io/docs/getting-started
+
+3. To run:
+    - For yarn: yarn start
+    - For npm: npm run start
+
+# Unsolved Problems
+1. The hand ranking game currently does not allow the user to reshuffle the widgets once selected in the drop area, they must drag it back to the initial list section and redrag in the desired order.
+
+2. Once the modal is open, you can still scroll on the screen that it is overlaying.
+____________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +116,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
