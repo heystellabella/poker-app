@@ -1,25 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Quicksand:wght@300&display=swap');
+
+
 body {
-  background-color: rgb(247, 219, 219);
+  background-color: rgb(250, 221, 221);
+  font-family: 'Quicksand', sans-serif;
 }
 
 .banner {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
 }
 
 .banner > h1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
 }
 
-h1, h2 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#tagline {
+  font-style: italic;
+}
+
+h1,h2 {
   text-align: center;
-}
-
-.banner > #tagline {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .subNavBar {
@@ -30,20 +33,16 @@ nav {
   display: inline-flex;
 }
 
-nav > .navLink {
+nav>.navLink {
   padding: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 10px;
   margin-right: 10px;
 }
+
 div {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 10px;
 }
 
 .handImage {
   max-width: 250px;
 }
-
-
 
