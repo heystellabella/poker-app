@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/poker-app/static/css/main.0d6d36fa.css",
+    "main.js": "/poker-app/static/js/main.e66113a8.js",
+    "static/js/787.024033e9.chunk.js": "/poker-app/static/js/787.024033e9.chunk.js",
+    "index.html": "/poker-app/index.html",
+    "main.0d6d36fa.css.map": "/poker-app/static/css/main.0d6d36fa.css.map",
+    "main.e66113a8.js.map": "/poker-app/static/js/main.e66113a8.js.map",
+    "787.024033e9.chunk.js.map": "/poker-app/static/js/787.024033e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d6d36fa.css",
+    "static/js/main.e66113a8.js"
+  ]
+}

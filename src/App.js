@@ -15,11 +15,11 @@ function App() {
         <h1>Stella's Poker Academy</h1>
         <h3 id="tagline">Where professional poker players are made.</h3>
         <nav>
-            <p className="navLink"><Link to="/" underline="hover">Home</Link></p>
-            <p className="navLink"><Link to="/how-to-play">How to Play</Link></p>
-            <p className="navLink"><Link to="/hand-rankings">Hand Rankings</Link></p>
-            <p className="navLink"><Link to="/poker-dictionary">Poker Dictionary</Link></p>
-            <p className="navLink"><Link to="/test-your-skills">Test Your Skills</Link></p>
+            <p className="navLink"><Link to="./" underline="hover">Home</Link></p>
+            <p className="navLink"><Link to="./how-to-play">How to Play</Link></p>
+            <p className="navLink"><Link to="./hand-rankings">Hand Rankings</Link></p>
+            <p className="navLink"><Link to="./poker-dictionary">Poker Dictionary</Link></p>
+            <p className="navLink"><Link to="./test-your-skills">Test Your Skills</Link></p>
         </nav>
       </div>
 
