@@ -1,5 +1,5 @@
 # About
-This application teaches users how to play poker from scratch. 
+This application teaches users how to play poker from scratch. This includes a section on how to play, the hand combinations, a poker dictionary and a section to test the skills you have learnt.
 
 # Technologies Used
 1. React JS
