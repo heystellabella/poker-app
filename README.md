@@ -1,3 +1,6 @@
+# About
+This application teaches users how to play poker from scratch. 
+
 # Technologies Used
 1. React JS
 2. React Router
@@ -26,19 +29,21 @@ Hand Ranking Game Logic:
 5. Wrote function to reset the game. Sets all the states back to initial.
 
 # Installation instructions
-1. Install the React Router Library
-    - For yarn: yarn add react-router-dom
-    - For npm: npm install react-router-dom
+1. Run: `yarn install`
+    - To install dependancies
+2. Install the React Router Library
+    - For yarn: `yarn add react-router-dom`
     - Referece: https://v5.reactrouter.com/core/guides/quick-start/installation
 
-2. Install Jest for testing
-    - For yarn: yarn add --dev jest
-    - For npm: npm install --save-dev
+3. Install Jest for testing
+    - For yarn: `yarn add --dev jest`
     - Referece: https://jestjs.io/docs/getting-started
 
-3. To run:
-    - For yarn: yarn start
-    - For npm: npm run start
+4. Install Material UI
+    - yarn add @mui/material @emotion/react @emotion/styled
+
+5. To run:
+    - For yarn: `yarn start`
 
 # Unsolved Problems
 1. The hand ranking game currently does not allow the user to reshuffle the widgets once selected in the drop area, they must drag it back to the initial list section and redrag in the desired order.
